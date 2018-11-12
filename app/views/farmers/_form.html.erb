@@ -1,0 +1,36 @@
+<%= form_with model: @farmer do |f| %>
+
+<div>
+  <%= f.label :name %><br/>
+  <%= f.text_field :name %>
+</div>
+
+<div>
+  <%= f.label :zip %><br/>
+  <%= f.text_field :zip %>
+</div>
+
+<div>
+  <%= f.label :pref %><br/>
+  <%= f.text_field :pref %>
+</div>
+
+<div>
+  <%= f.label :city %><br/>
+  <%= f.text_field :city %>
+</div>
+
+<div>
+  <%= f.label :address %><br/>
+  <%= f.text_field :address %>
+</div>
+
+<div>
+  <%= f.label :image_name %><br/>
+  <%= f.file_field :image_name %>
+</div>
+
+<br>
+  <%= f.submit %>
+
+<% end %>

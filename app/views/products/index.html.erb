@@ -1,0 +1,14 @@
+<h1>All Products</h1>
+
+<% @products.each do |product| %>
+
+<div>
+  <p><%= image_tag product.image_name.to_s %></p>
+  <p><%= link_to "#{product.name}", product %></p>
+  <p>¥<%= product.price %>〜</p>
+</div>
+
+
+
+
+<% end %>
